@@ -1,0 +1,46 @@
+[
+    {
+        "op":   "PUSH1",
+        "stack":    ["0xaddr"]
+    },
+    {
+        "op":   "SLOAD",
+        "stack":    ["value"]
+    },
+    {
+        "op":   "PUSH1",
+        "stack":    ["value", "0xaddr"]
+    },
+    {
+        "op":   "CALLDATALOAD",
+        "stack":    ["value", "value"]
+    },
+    {
+        "op":   "ADD",
+        "stack":    ["sum"]
+    },
+    {
+        "op":   "TIMESTAMP",
+        "stack":    ["sum", "timestamp"]
+    },
+    {
+        "op":   "LT",
+        "stack":    ["cmp"]
+    },
+    {
+        "op":   "PUSH1",
+        "stack":    ["cmp", "value"]
+    },
+    {
+        "op":   "SWAP1",
+        "stack":    ["value", "cmp"]
+    },
+    {
+        "op":   "DUP1",
+        "stack":    ["value", "cmp", "cmp"]
+    },
+    {
+        "op":   "MUL",
+        "stack":    ["value", "mul"]
+    }
+]
