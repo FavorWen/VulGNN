@@ -25,7 +25,7 @@ def toGraph(g:jsonParse.Graph, bug_type, path):
     verFile.close()
     typeFile.close()
 
-BUG_ENCODE = ["rein", "timestamp"]
+BUG_ENCODE = ["rein", "timestamp", "overflow"]
 
 """
 Args:
